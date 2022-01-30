@@ -1,0 +1,201 @@
+body {
+    background: #E5E5E5;
+    width: 414px;  /*TIVE QUE LIMITAR O TAMANHO PRA POR PORCENTAGEM NO RESTO*/
+}
+
+header {
+    display: flex;
+
+}
+    
+.top {
+    width: 100%;
+    height: 92px;
+    
+    background: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    z-index: 100;
+    top: 0;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    
+    
+}
+
+.top h1 {
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+
+    margin: 8px 0 5px 21px;
+    height: 44px;
+
+}
+
+.top p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+
+    margin: 0 0 0 21px;
+}
+
+
+
+main {
+    margin: 123px 0 92px 19px;
+    width: 100%;
+    
+}
+
+main h2{
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+}
+
+.foods, .drinks, .desserts {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    
+    width: calc(100% + 19px);
+    margin-left: -19px;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;  /*So para esconder a barra de rolagem */
+}
+
+
+.meal, .drink, .dessert {
+    width: 172px;
+    height: 216px;
+    margin: 17px 8px 27px 8px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+
+    display: flex;
+    flex-flow: column wrap;
+    flex-shrink: 0;
+}
+
+.drink {
+    height: 202px;
+}
+
+.dessert {
+    height: 197px;
+    margin-bottom: 16px;
+}
+
+.meal:first-child, .drink:first-child, .dessert:first-child {
+    margin-left: 19px;
+}
+
+.meal:last-child, .drink:last-child, .dessert:last-child {
+    margin-right: 19px;  /* ESSES DOIS FORAM POR CAUSA DA MARGEM DO MAIN*/
+}
+
+.meal img, .drink img, .dessert img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+
+    margin-top: 18px;
+    align-self: center;
+    
+}
+
+.title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    color: #333333;
+
+    margin: 8px 0 4px 15px;
+
+}
+
+.description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19.5px;
+    color: #A6A6A6;
+    
+
+    margin: 0 11px 5px 14px;
+
+}
+
+.price {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+
+    margin-left: 14px;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: space-around;
+    background: #FFFFFF;
+
+    position: fixed;
+    bottom: 0;
+    opacity: 1;
+
+}
+
+.requestButton {
+    width: 364px;
+    height: 61px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #CBCBCB;
+    border-radius: 50px;
+    align-self: center;
+
+}
+
+
+footer p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+
+    color: #FFFFFF;
+}
