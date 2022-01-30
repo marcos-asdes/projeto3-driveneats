@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,101 +29,96 @@
         <div class="guide">
             <h2>Primeiro, seu prato</h2>
         </div>
-        <section class="foods">
-            <div class="meal" data-identifier="dishes">
+        <section class="foods" data-identifier="dishes">
+            <div class="meal" data-identifier="food-option" onclick="dishSelected(this)">
                 <img src="images/x-tudo.jpg" />
-                <div class="title">Frango Yin Yang</div>
-                <div class="description">Um pouco de batata, um pouco de salada</div>
-                <div class="price">R$ 14,90</div>
+                <div class="title" data-identifier="food-title">X-Tudo</div>
+                <div class="description">X-Tudo</div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">11,99</span></div>
               </div>
-              <div class="meal" data-identifier="dishes">
+              <div class="meal" data-identifier="food-option" onclick="dishSelected(this)">
                 <img src="images/sanduba.jpg" />
-                <div class="title">Frango Yin Yang</div>
-                <div class="description">Um pouco de batata, um pouco de salada</div>
-                <div class="price">R$ 14,90</div>
+                <div class="title" data-identifier="food-title">X-Sanduba</div>
+                <div class="description">X-Sanduba</div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">11,99</span></div>
               </div>
-              <div class="meal" data-identifier="dishes">
+              <div class="meal" data-identifier="food-option" onclick="dishSelected(this)">
                 <img src="images/misto-quente.jpg" />
-                <div class="title">Frango Yin Yang</div>
-                <div class="description">Um pouco de batata, um pouco de salada</div>
-                <div class="price">R$ 14,90</div>
+                <div class="title" data-identifier="food-title">Misto Quente</div>
+                <div class="description">Misto Quente</div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">7,50</span></div>
               </div> 
-              <div class="meal" data-identifier="dishes">
+              <div class="meal" data-identifier="food-option" onclick="dishSelected(this)">
                 <img src="images/pizza.jpg" />
-                <div class="title">Frango Yin Yang</div>
-                <div class="description">Um pouco de batata, um pouco de salada</div>
-                <div class="price">R$ 14,90</div>
+                <div class="title" data-identifier="food-title">Pizza de Calabresa</div>
+                <div class="description">Pizza de Calabresa</div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">34,99</span></div>
               </div> 
         </section>
         <div class="guide">
             <h2>Agora, sua bebida</h2>
         </div>
-        <section class="drinks">
-            <div class="drink" data-identifier="drinks">
+        <section class="drinks" data-identifier="drinks">
+            <div class="drink" data-identifier="food-option" onclick="drinkSelected(this)">
                 <img src="images/coca-cola.jpg" />
-                <div class="title">Coquinha gelada</div>
+                <div class="title" data-identifier="food-title">Coca-cola</div>
                 <div class="description">Lata 350ml</div>
-                <div class="price">R$ 4,90</div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">4,00</span></div>
               </div>
-              <div class="drink" data-identifier="drinks">
+              <div class="drink" data-identifier="food-option" onclick="drinkSelected(this)">
                 <img src="images/h2oh.jpg" />
-                <div class="title">Coquinha gelada</div>
-                <div class="description">Lata 350ml</div>
-                <div class="price">R$ 4,90</div>
+                <div class="title" data-identifier="food-title">H2OH</div>
+                <div class="description">Garrafa 500ml</div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">5,50</span></div>
               </div>
-              <div class="drink" data-identifier="drinks">
+              <div class="drink" data-identifier="food-option" onclick="drinkSelected(this)">
                 <img src="images/ice-tea-limao.jpg" />
-                <div class="title">Coquinha gelada</div>
-                <div class="description">Lata 350ml</div>
-                <div class="price">R$ 4,90</div>
-              </div>
-              <div class="drink" data-identifier="drinks">
-                <img src="images/suco-de-laranja.png" />
-                <div class="title">Coquinha gelada</div>
-                <div class="description">Lata 350ml</div>
-                <div class="price">R$ 4,90</div>
+                <div class="title" data-identifier="food-title">Ice Tea</div>
+                <div class="description">Garrafa 350ml</div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">4,50</span></div>
               </div>
         </section>
         <div class="guide">
             <h2>Por fim, sua sobremesa</h2>
         </div>
-        <section class="desserts">
-            <div class="dessert" data-identifier="desserts">
+        <section class="desserts" data-identifier="desserts">
+            <div class="dessert" data-identifier="food-option" onclick="dessertSelected(this)">
                 <img src="images/pudim.jpg" />
-                <div class="title">Pudim</div>
-                <div class="description">Apenas pudim</div>
-                <div class="price">R$ 7,90</div>
+                <div class="title" data-identifier="food-title">Pudim</div>
+                <div class="description">Pudim</div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">6,50</span></div>
               </div>
-              <div class="dessert" data-identifier="desserts">
+              <div class="dessert" data-identifier="food-option" onclick="dessertSelected(this)">
                 <img src="images/brownie.jpg" />
-                <div class="title">Pudim</div>
-                <div class="description">Apenas pudim</div>
-                <div class="price">R$ 7,90</div>
+                <div class="title" data-identifier="food-title">Brownie</div>
+                <div class="description">70g</div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">3,50</span></div>
               </div>
-              <div class="dessert" data-identifier="desserts">
+              <div class="dessert" data-identifier="food-option" onclick="dessertSelected(this)">
                 <img src="images/cookies.jpg" />
-                <div class="title">Pudim</div>
-                <div class="description">Apenas pudim</div>
-                <div class="price">R$ 7,90</div>
+                <div class="title" data-identifier="food-title">Cookie</div>
+                <div class="description">50g</div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">2,50</span></div>
               </div>
-              <div class="dessert" data-identifier="desserts">
+              <div class="dessert" data-identifier="food-option" onclick="dessertSelected(this)">
                 <img src="images/pavê.png" />
-                <div class="title">Pudim</div>
-                <div class="description">Apenas pudim</div>
-                <div class="price">R$ 7,90</div>
+                <div class="title" data-identifier="food-title">Pavê</div>
+                <div class="description">Pavê</div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">6,00</span></div>
               </div>
         </section>
     </main>
     
     
     <footer>
-        <div class = "requestButton">
-            <p>Selecione os 3 itens<br>para fechar o pedido</p>
+        <div class = "request-button">
+          <button id="btn"><p>Selecione os 3 itens <br>para fechar o pedido</p></button>
         </div>
     </footer>
-    
+  
 
-  <script scr="script.js"></script>
+
+  <script src="script.js"></script>
 
     
 </body>
