@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,9 @@
 </head>
 
 <body>
-    
+
+<!--   <div class="background-white"></div> -->
+  
     <header>
         <div class = "top">
             <h1>DrivenEats</h1>
@@ -33,25 +35,25 @@
             <div class="meal" data-identifier="food-option" onclick="dishSelected(this)">
                 <img src="images/x-tudo.jpg" />
                 <div class="title" data-identifier="food-title">X-Tudo</div>
-                <div class="description">X-Tudo</div>
+                <div class="description">Pão, carne, queijo e molho especial</div>
                 <div class="price" data-identifier="food-price">R$ <span class="value">11,99</span></div>
               </div>
               <div class="meal" data-identifier="food-option" onclick="dishSelected(this)">
                 <img src="images/sanduba.jpg" />
                 <div class="title" data-identifier="food-title">X-Sanduba</div>
-                <div class="description">X-Sanduba</div>
+                <div class="description">Pão, salaminho, queijo e alface</div>
                 <div class="price" data-identifier="food-price">R$ <span class="value">11,99</span></div>
               </div>
               <div class="meal" data-identifier="food-option" onclick="dishSelected(this)">
                 <img src="images/misto-quente.jpg" />
                 <div class="title" data-identifier="food-title">Misto Quente</div>
-                <div class="description">Misto Quente</div>
-                <div class="price" data-identifier="food-price">R$ <span class="value">7,50</span></div>
+                <div class="description">Pão na chapa, queijo e presunto</div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">7,49</span></div>
               </div> 
               <div class="meal" data-identifier="food-option" onclick="dishSelected(this)">
                 <img src="images/pizza.jpg" />
                 <div class="title" data-identifier="food-title">Pizza de Calabresa</div>
-                <div class="description">Pizza de Calabresa</div>
+                <div class="description">Massa fina, molho, queijo e calabresa</div>
                 <div class="price" data-identifier="food-price">R$ <span class="value">34,99</span></div>
               </div> 
         </section>
@@ -63,19 +65,19 @@
                 <img src="images/coca-cola.jpg" />
                 <div class="title" data-identifier="food-title">Coca-cola</div>
                 <div class="description">Lata 350ml</div>
-                <div class="price" data-identifier="food-price">R$ <span class="value">4,00</span></div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">3,99</span></div>
               </div>
               <div class="drink" data-identifier="food-option" onclick="drinkSelected(this)">
                 <img src="images/h2oh.jpg" />
                 <div class="title" data-identifier="food-title">H2OH</div>
                 <div class="description">Garrafa 500ml</div>
-                <div class="price" data-identifier="food-price">R$ <span class="value">5,50</span></div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">5,49</span></div>
               </div>
               <div class="drink" data-identifier="food-option" onclick="drinkSelected(this)">
                 <img src="images/ice-tea-limao.jpg" />
                 <div class="title" data-identifier="food-title">Ice Tea</div>
                 <div class="description">Garrafa 350ml</div>
-                <div class="price" data-identifier="food-price">R$ <span class="value">4,50</span></div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">4,49</span></div>
               </div>
         </section>
         <div class="guide">
@@ -86,40 +88,64 @@
                 <img src="images/pudim.jpg" />
                 <div class="title" data-identifier="food-title">Pudim</div>
                 <div class="description">Pudim</div>
-                <div class="price" data-identifier="food-price">R$ <span class="value">6,50</span></div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">6,49</span></div>
               </div>
               <div class="dessert" data-identifier="food-option" onclick="dessertSelected(this)">
                 <img src="images/brownie.jpg" />
                 <div class="title" data-identifier="food-title">Brownie</div>
                 <div class="description">70g</div>
-                <div class="price" data-identifier="food-price">R$ <span class="value">3,50</span></div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">3,49</span></div>
               </div>
               <div class="dessert" data-identifier="food-option" onclick="dessertSelected(this)">
                 <img src="images/cookies.jpg" />
                 <div class="title" data-identifier="food-title">Cookie</div>
                 <div class="description">50g</div>
-                <div class="price" data-identifier="food-price">R$ <span class="value">2,50</span></div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">2,49</span></div>
               </div>
               <div class="dessert" data-identifier="food-option" onclick="dessertSelected(this)">
                 <img src="images/pavê.png" />
                 <div class="title" data-identifier="food-title">Pavê</div>
                 <div class="description">Pavê</div>
-                <div class="price" data-identifier="food-price">R$ <span class="value">6,00</span></div>
+                <div class="price" data-identifier="food-price">R$ <span class="value">5,99</span></div>
               </div>
         </section>
     </main>
-    
+
+    <div class="order-confirm hidden" data-identifier="confirmation-dialog">
+      <h1>Confirme seu pedido</h1>
+      <div class = "order-space">
+        <div class = "order1">
+          <p><span class="order-name-0">Pedido1</span></p> 
+          <p><span class="order-price-0">Preco1</span></p>
+        </div>
+        <div class = "order2">
+          <p><span class="order-name-1">Pedido2</span></p> 
+          <p><span class="order-price-1">Preco2</span></p>
+        </div>
+        <div class = "order3">
+          <p><span class="order-name-2">Pedido3</span></p>
+          <p><span class="order-price-2">Preco3</span></p>
+        </div>
+        <div class = "orderTotal">
+          <p><span>TOTAL R$ </span></p>
+          <p><span class="total-order-price">PrecoTotal</span></p>
+        </div>
+      </div>
+      <div class="confirm-button">
+        <button onclick="confirmOrder()">Tudo certo, pode pedir!</button>
+      </div>
+      <div class="cancel-button">
+        <button onclick="cancelOrder()">Cancelar</button>
+      </div>
+    </div>
     
     <footer>
         <div class = "request-button">
-          <button id="btn"><p>Selecione os 3 itens <br>para fechar o pedido</p></button>
+          <button id="btn" onclick="infoOrder()"><p>Selecione os 3 itens <br>para fechar o pedido</p></button>
         </div>
     </footer>
   
-
-
   <script src="script.js"></script>
 
-    
 </body>
 </html>
